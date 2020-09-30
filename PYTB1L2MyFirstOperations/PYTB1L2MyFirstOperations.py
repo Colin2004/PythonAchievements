@@ -1,13 +1,3 @@
-  
-#Welke berekeningen
-#toekennen = check
-#optellen + check
-#aftrekken - check
-#delen / check
-#restwaarde %
-#optellen bij waarde van variabele += check
-#delen door waarde van variabele /=
-
 getal1 = 12
 
 getal2 = 2
