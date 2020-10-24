@@ -1,18 +1,25 @@
-invoer = input("Hoeveel km per maand rij je?: ");
+invoer = "";
 verzekering_per_maand = 23
 benzine_kosten_per_liter = 1.54
 liter_per_kilometer = 0.2
-km_per_maand = float(invoer)
 
 
-maandkosten = km_per_maand * 0.2 * 1.54 + 23
 
+def maandkosten (km_per_maand):
+    eindkosten = km_per_maand * benzine_kosten_per_liter * liter_per_kilometer + verzekering_per_maand
+    print("Je eindkosten zijn",eindkosten)
 
-if isinstance(km_per_maand, float):
+while not isinstance(invoer, float):
 
-  
     try:
-        print("De kosten zijn", maandkosten)
+        invoer = input("Hoeveel kilometer rij jij per maand? ")
+        
+        invoer = float(invoer)
+
+        print("je rijd", invoer, "kilometer per maand")
 
     except ValueError:
         print(invoer + " is geen geldig getal!")
+
+
+maandkosten(invoer)
