@@ -1,7 +1,7 @@
-lijst = ["erg", 420, False] #list aangemaakt
+lijst = ["erg", 420, False] #een list aangemaakt
 
 print(lijst)
-lijst.append("boterkoek") #hoi toegevoegd aan de list
+lijst.append("boterkoek") #boterkoek toegevoegd aan de list
 
 print(lijst)
 lijst.remove(420)
@@ -13,4 +13,4 @@ lijst.sort()
 lijst.append("!")
 
 
-print(lijst)
+print(lijst) #dit print nu de list en er hoort een zin te verschijnen
